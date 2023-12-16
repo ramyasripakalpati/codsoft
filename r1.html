@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculator</title>
+<style>
+input[type="button"] { 
+       width:23%;  
+       border:2px solid black;   
+       background-color:orange;
+       color:white;
+       height:30px;
+       font-weight: bold;
+border-radius: 10px; 
+}
+input[type="text"] { 
+       width:73%;    
+       border:2px solid black;  
+       height:30px;
+       font-weight: bold; 
+ border-radius: 10px; 
+}
+table{
+ border:1px solid black; 
+padding:100px;
+background-color:#D2D1CD;
+}
+body{
+background-color:E8BEAC;
+}
+</style>
+</head>
+<body>
+<center>
+<br><br><br><br><br><br><br><br>
+<form name="one">
+<table>
+<h1>Calculator</h1>
+        <tr> 
+            <td> 
+                <input type="text" type="text" name="answer"> 
+                <input type="button" value="AC" onclick = "one.answer.value = ' ' " >
+            </td> 
+        </tr> 
+  
+        <tr> 
+            <td>
+              <input type="button" value="1" onclick = "one.answer.value += '1' " > 
+              <input type="button" value="2" onclick = "one.answer.value += '2' ">
+              <input type="button" value="3" onclick = "one.answer.value += '3' ">
+              <input type="button" value="/" onclick = "one.answer.value += '/' ">
+        </td> 
+        </tr> 
+        <tr> 
+            <td>
+           <input type="button" value="4"onclick = "one.answer.value += '4' ">
+            <input type="button" value="5" onclick = "one.answer.value += '5' ">
+            <input type="button" value="6"onclick = "one.answer.value += '6' ">
+            <input type="button" value="*" onclick = "one.answer.value += '*' ">
+         </td> 
+        </tr> 
+        <tr> 
+            <td>
+            <input type="button" value="7" onclick = "one.answer.value += '7' ">
+            <input type="button" value="8"onclick = "one.answer.value += '8' "> 
+            <input type="button" value="9"onclick = "one.answer.value += '9' ">
+            <input type="button" value="-"onclick = "one.answer.value += '-' ">
+        </td> 
+        </tr> 
+        <tr> 
+            <td>
+           <input type="button" value="0" onclick = "one.answer.value += '0'"> 
+            <input type="button" value="." onclick = "one.answer.value += '.'">
+            <input type="button" value="=" onclick = "one.answer.value = eval(one.answer.value) ">
+            <input type="button" value="+" onclick = "one.answer.value += '+'">
+         </td> 
+        </tr> 
+    </table> 
+</center>
+ 
+<script type="ramya.js" src="script.js"></script>
+
+</body> 
+  
+</html>
